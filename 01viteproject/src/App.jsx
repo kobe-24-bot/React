@@ -1,12 +1,12 @@
 
 
-
+import Chai from './chai.jsx'
 
 function App() {
   
 
   return(
-    <h1>Chai aur vite  || Kush</h1>
+   <Chai/>
   )
     
 }

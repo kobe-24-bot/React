@@ -1,8 +1,10 @@
 
-
+  import Chai from "./chai.js";
 function App() {
   return (
-  <h1>Hello Kush</h1>
+    <>
+    <Chai/>
+    </>
   );
 }
 
