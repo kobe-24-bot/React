@@ -18,6 +18,11 @@ const [counter,setCounter]=useState(5) //use of hook to manage state
    console.log('Counter Value:', counter,Math.random());
    }
    const reduceValue=()=>{
+    if(counter==0){
+      console.log('VALUE CANNOT BE NEGATIVE:', counter,Math.random());
+      document.getElementById('print').innerHTML='VALUE CANNOT BE NEGATIVE'
+      return;
+    }
     setCounter(counter-1);
     console.log('Counter Value:', counter,Math.random());
    }
@@ -25,8 +30,9 @@ const [counter,setCounter]=useState(5) //use of hook to manage state
     <>
      <h1>Chai Aur react</h1>
      <h2>Counter Value:{counter}</h2>
+     <h2 id="print"></h2>
      <button
-     onClick={addValue}
+     onClick={addValue}//onClick event handler to add value
      >Add Value{counter}</button>
      <br/>
      <button
