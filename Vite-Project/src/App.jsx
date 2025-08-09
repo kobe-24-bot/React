@@ -10,7 +10,7 @@ let Arr=[1,2,3]
     <>
       <h1 className='bg-green-400 text-black '>Tailwind Test</h1>
       
-   <Card username="Kushal" button=""/>
+   <Card username="Kushal" button=""/> //whatever we pass here will be passed as props to the Card component
     <Card  button="Not okay"/>
 
     </>
