@@ -36,7 +36,7 @@ const [counter,setCounter]=useState(5) //use of hook to manage state
      >Add Value{counter}</button>
      <br/>
      <button
-     onClick={reduceValue}  //onClick event handler to reduce value
+     onClick={reduceValue}  //onClick event handler to reduce value don't give parentheses() after function name
      >Decrease Value{counter}</button>
      <p>footer:{counter}</p>
   </>
